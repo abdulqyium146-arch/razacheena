@@ -9,15 +9,25 @@ export const metadata: Metadata = {
   title: "Contact Raza Cheena | Free SEO Audit for UK Local Businesses",
   description:
     "Get in touch with Raza Cheena for a free SEO audit. UK Local SEO specialist available for local service businesses across the UK. Typically responds within one business day.",
+  authors: [{ name: "Raza Cheena", url: "https://razacheena.com/about/" }],
+  creator: "Raza Cheena",
+  publisher: "Raza Cheena",
   alternates: { canonical: "https://razacheena.com/contact/" },
   openGraph: {
     title: "Contact Raza Cheena | Free SEO Audit",
     description:
       "Book your free SEO audit today. UK Local SEO specialist for local service businesses. Responds within one business day.",
     url: "https://razacheena.com/contact/",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    siteName: "Raza Cheena",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Contact Raza Cheena — Free SEO Audit", type: "image/jpeg" }],
     locale: "en_GB",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Raza Cheena | Free SEO Audit",
+    description: "Book your free SEO audit today. UK Local SEO specialist. Responds within one business day.",
+    images: ["/og-image.jpg"],
   },
 };
 

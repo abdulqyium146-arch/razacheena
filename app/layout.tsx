@@ -35,22 +35,43 @@ export const metadata: Metadata = {
     title: "Raza Cheena | UK Local SEO Specialist & Next.js Developer",
     description:
       "UK Local SEO specialist helping local service businesses rank on Google Maps and Search. Expert in Technical SEO, Next.js development, and humanised content.",
-    url: "https://razacheena.com",
+    url: "https://razacheena.com/",
     siteName: "Raza Cheena",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Raza Cheena — UK Local SEO Specialist" }],
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Raza Cheena — UK Local SEO Specialist",
+        type: "image/jpeg",
+      },
+    ],
     locale: "en_GB",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
+    site: "@razacheena",
+    creator: "@razacheena",
     title: "Raza Cheena | UK Local SEO Specialist",
     description:
       "UK Local SEO specialist helping local businesses rank higher and win more customers online.",
+    images: ["/og-image.jpg"],
   },
   verification: {
     google: "U8VWxgFOlWlWV7heTamUUXDcRq2XzmQmQbodpk1SDw4",
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const jsonLd = {
@@ -60,8 +81,13 @@ const jsonLd = {
       "@type": "Person",
       "@id": "https://razacheena.com/#person",
       name: "Raza Cheena",
-      url: "https://razacheena.com",
-      image: "https://razacheena.com/raza-cheena.jpg",
+      url: "https://razacheena.com/",
+      image: {
+        "@type": "ImageObject",
+        url: "https://razacheena.com/raza-cheena.jpg",
+        width: 400,
+        height: 400,
+      },
       jobTitle: "UK Local SEO Specialist & Full-Stack Developer",
       description:
         "Raza Cheena is a UK Local SEO specialist and Next.js developer with 10+ years of experience helping local service businesses rank on Google, win more customers, and grow online.",
@@ -82,22 +108,19 @@ const jsonLd = {
         "@type": "Occupation",
         name: "SEO Specialist & Web Developer",
         occupationLocation: { "@type": "Country", name: "United Kingdom" },
-        skills: "Local SEO, Technical SEO, Semantic SEO, Next.js, Tailwind CSS, TypeScript",
+        skills:
+          "Local SEO, Technical SEO, Semantic SEO, Next.js, Tailwind CSS, TypeScript",
       },
-      alumniOf: [],
-      award: "UK Local SEO Specialist",
     },
     {
       "@type": "WebSite",
       "@id": "https://razacheena.com/#website",
-      url: "https://razacheena.com",
+      url: "https://razacheena.com/",
       name: "Raza Cheena — UK Local SEO Specialist",
+      description:
+        "UK Local SEO specialist and Next.js developer helping local service businesses rank higher and win more customers online.",
       publisher: { "@id": "https://razacheena.com/#person" },
-      potentialAction: {
-        "@type": "SearchAction",
-        target: "https://razacheena.com/?s={search_term_string}",
-        "query-input": "required name=search_term_string",
-      },
+      inLanguage: "en-GB",
     },
   ],
 };
@@ -111,6 +134,7 @@ export default function RootLayout({
       className={`${sora.variable} ${dmSans.variable} h-full antialiased`}
     >
       <head>
+        <meta name="theme-color" content="#1D4ED8" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

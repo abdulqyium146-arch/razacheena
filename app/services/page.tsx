@@ -16,9 +16,16 @@ export const metadata: Metadata = {
     description:
       "Six specialist services designed to help UK local businesses rank higher, win more customers, and grow online.",
     url: "https://razacheena.com/services/",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    siteName: "Raza Cheena",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "UK Local SEO & Web Development Services — Raza Cheena", type: "image/jpeg" }],
     locale: "en_GB",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "UK Local SEO & Web Development Services | Raza Cheena",
+    description: "Six specialist services to help UK local businesses rank higher, win more customers, and grow online.",
+    images: ["/og-image.jpg"],
   },
 };
 

@@ -10,15 +10,23 @@ export const metadata: Metadata = {
     "Meet Raza Cheena — a UK Local SEO specialist and Next.js developer with 10+ years' experience helping local service businesses rank higher and win more customers online.",
   authors: [{ name: "Raza Cheena", url: "https://razacheena.com/about/" }],
   creator: "Raza Cheena",
+  publisher: "Raza Cheena",
   alternates: { canonical: "https://razacheena.com/about/" },
   openGraph: {
     title: "About Raza Cheena | UK Local SEO Specialist",
     description:
       "10+ years helping UK local businesses dominate Google. Senior-level expertise across Local SEO, Technical SEO, Semantic SEO, Next.js development, and content writing.",
     url: "https://razacheena.com/about/",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    siteName: "Raza Cheena",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "About Raza Cheena — UK Local SEO Specialist", type: "image/jpeg" }],
     locale: "en_GB",
     type: "profile",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Raza Cheena | UK Local SEO Specialist",
+    description: "10+ years helping UK local businesses dominate Google. Five-in-one expert: Local SEO, Technical SEO, Semantic SEO, Next.js, Content.",
+    images: ["/og-image.jpg"],
   },
 };
 

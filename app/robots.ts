@@ -6,9 +6,12 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/admin/", "/_next/"],
+        // Only block actual admin/API routes — never block /_next/ as Googlebot
+        // needs /_next/static/ to render JS and CSS for accurate page assessment
+        disallow: ["/api/", "/admin/"],
       },
     ],
     sitemap: "https://razacheena.com/sitemap.xml",
+    host: "https://razacheena.com",
   };
 }
