@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   title: "UK Local SEO & Web Development Services | Raza Cheena",
   description:
     "Local SEO, Technical SEO, Semantic SEO, Next.js development, content writing, and SEO audits for UK local service businesses. Find out what's right for your business.",
+  authors: [{ name: "Raza Cheena", url: "https://razacheena.com/about/" }],
+  creator: "Raza Cheena",
   alternates: { canonical: "https://razacheena.com/services/" },
   openGraph: {
     title: "UK Local SEO & Web Development Services | Raza Cheena",

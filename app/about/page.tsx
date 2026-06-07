@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   title: "About Raza Cheena | UK Local SEO Specialist",
   description:
     "Meet Raza Cheena — a UK Local SEO specialist and Next.js developer with 10+ years' experience helping local service businesses rank higher and win more customers online.",
+  authors: [{ name: "Raza Cheena", url: "https://razacheena.com/about/" }],
+  creator: "Raza Cheena",
   alternates: { canonical: "https://razacheena.com/about/" },
   openGraph: {
     title: "About Raza Cheena | UK Local SEO Specialist",
@@ -118,6 +120,12 @@ export default function AboutPage() {
             </ol>
           </nav>
           <div className="max-w-2xl">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="inline-flex items-center gap-1.5 bg-blue-700/30 text-blue-300 text-xs font-medium px-3 py-1 rounded-full border border-blue-700/40">
+                Written &amp; maintained by
+                <span className="text-white font-semibold">Raza Cheena</span>
+              </span>
+            </div>
             <h1
               className="text-4xl md:text-5xl font-extrabold text-white mb-6"
               style={{ fontFamily: "var(--font-sora)" }}
@@ -127,6 +135,9 @@ export default function AboutPage() {
             <p className="text-slate-300 text-lg leading-relaxed">
               UK Local SEO specialist and Next.js developer helping local service businesses
               rank higher, attract more customers, and build a sustainable online presence.
+            </p>
+            <p className="text-slate-400 text-sm mt-3">
+              <span className="font-medium text-slate-300">Raza Cheena</span> · UK Local SEO Specialist · 10+ years experience
             </p>
           </div>
         </div>

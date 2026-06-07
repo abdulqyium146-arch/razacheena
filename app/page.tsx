@@ -183,7 +183,10 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-blue-700/20 text-blue-300 text-sm font-medium px-3 py-1.5 rounded-full border border-blue-700/30 mb-6">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
-              UK Local SEO Specialist
+              <span>
+                <span className="text-white font-semibold">Raza Cheena</span>
+                {" · "}UK Local SEO Specialist
+              </span>
             </div>
 
             <h1
