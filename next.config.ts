@@ -1,7 +1,14 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  turbopack: {
+    // Prevents false workspace root detection from parent-directory lockfiles
+    root: path.resolve(__dirname),
+  },
+  images: {
+    formats: ["image/webp", "image/avif"],
+  },
 };
 
 export default nextConfig;
