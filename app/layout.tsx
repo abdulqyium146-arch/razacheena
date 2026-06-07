@@ -43,6 +43,9 @@ export const metadata: Metadata = {
     description:
       "UK Local SEO specialist helping local businesses rank higher and win more customers online.",
   },
+  verification: {
+    google: "U8VWxgFOlWlWV7heTamUUXDcRq2XzmQmQbodpk1SDw4",
+  },
   robots: { index: true, follow: true },
 };
 
