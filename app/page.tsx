@@ -60,21 +60,21 @@ const services = [
       "Build topical authority with entity-rich content and topic clusters. I map your content to search intent so Google sees you as the expert in your field.",
   },
   {
-    id: "nextjs",
+    id: "nextjs-development",
     icon: Code2,
     title: "Next.js Development",
     description:
       "Beautiful, lightning-fast websites built with Next.js 14. Every site I build is SEO-ready from day one — schema, metadata, Core Web Vitals all sorted.",
   },
   {
-    id: "content",
+    id: "content-writing",
     icon: PenLine,
     title: "Content Writing",
     description:
       "E-E-A-T optimised, humanised copy in natural UK English. Content that ranks, reads brilliantly, and converts visitors into paying customers.",
   },
   {
-    id: "audits",
+    id: "seo-audits",
     icon: Search,
     title: "SEO Audits",
     description:
@@ -333,7 +333,7 @@ export default function HomePage() {
             {services.map(({ id, icon: Icon, title, description }) => (
               <Link
                 key={id}
-                href={`/services#${id}`}
+                href={`/services/${id}/`}
                 className="group bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-200 rounded-2xl p-6 transition-all"
               >
                 <div className="w-11 h-11 bg-blue-100 group-hover:bg-blue-200 rounded-xl flex items-center justify-center mb-4 transition-colors">

@@ -120,7 +120,7 @@ const services = [
     ],
   },
   {
-    id: "nextjs",
+    id: "nextjs-development",
     icon: Code2,
     title: "Next.js Development",
     tagline: "Fast, Beautiful Websites Built to Rank",
@@ -136,7 +136,7 @@ const services = [
     ],
   },
   {
-    id: "content",
+    id: "content-writing",
     icon: PenLine,
     title: "Content Writing",
     tagline: "UK English Copy That Ranks and Converts",
@@ -152,7 +152,7 @@ const services = [
     ],
   },
   {
-    id: "audits",
+    id: "seo-audits",
     icon: Search,
     title: "SEO Audits",
     tagline: "Find Out Exactly What's Holding You Back",
@@ -235,13 +235,22 @@ export default function ServicesPage() {
                 </h2>
                 <p className="text-blue-700 font-semibold text-sm mb-4">{tagline}</p>
                 <p className="text-slate-600 leading-relaxed mb-6">{description}</p>
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-semibold px-5 py-3 rounded-lg transition-colors text-sm"
-                >
-                  Enquire About {title}
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
+                <div className="flex flex-wrap gap-3">
+                  <Link
+                    href={`/services/${id}/`}
+                    className="inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold px-5 py-3 rounded-lg transition-colors text-sm"
+                  >
+                    Full Details
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                  <Link
+                    href="/contact/"
+                    className="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-semibold px-5 py-3 rounded-lg transition-colors text-sm"
+                  >
+                    Enquire
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
               </div>
 
               {/* Bullets */}
