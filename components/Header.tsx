@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X, Phone, ArrowRight } from "lucide-react";
+import { Menu, X, Phone, ArrowRight, MessageCircle } from "lucide-react";
+
+const WA_LINK = "https://wa.me/923474825228?text=Hi%20Raza%2C%20I%27d%20like%20to%20find%20out%20more%20about%20your%20Local%20SEO%20services.";
 
 const navLinks = [
   { href: "/services", label: "Services" },
@@ -44,12 +46,22 @@ export default function Header() {
           {/* Desktop CTAs */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="tel:07700000000"
+              href="tel:03474825228"
               className="flex items-center gap-1.5 text-sm font-medium text-slate-700 hover:text-blue-700 transition-colors"
               aria-label="Call Raza Cheena"
             >
               <Phone className="w-4 h-4" />
-              07700 000 000
+              0347 4825228
+            </a>
+            <a
+              href={WA_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 bg-[#25D366] hover:bg-[#1ebe5d] text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors"
+              aria-label="WhatsApp Raza Cheena"
+            >
+              <MessageCircle className="w-4 h-4" />
+              WhatsApp
             </a>
             <Link
               href="/contact"
@@ -60,14 +72,23 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Mobile: phone + hamburger */}
-          <div className="flex items-center gap-3 md:hidden">
+          {/* Mobile: phone + WhatsApp + hamburger */}
+          <div className="flex items-center gap-2 md:hidden">
             <a
-              href="tel:07700000000"
+              href="tel:03474825228"
               className="p-2 text-blue-700"
               aria-label="Call us"
             >
               <Phone className="w-5 h-5" />
+            </a>
+            <a
+              href={WA_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-[#25D366]"
+              aria-label="WhatsApp us"
+            >
+              <MessageCircle className="w-5 h-5" />
             </a>
             <button
               onClick={() => setOpen(!open)}
@@ -95,10 +116,20 @@ export default function Header() {
                 {label}
               </Link>
             ))}
+            <a
+              href={WA_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="mt-1 flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-semibold py-3 px-4 rounded-lg transition-colors"
+            >
+              <MessageCircle className="w-4 h-4" />
+              Chat on WhatsApp
+            </a>
             <Link
               href="/contact"
               onClick={() => setOpen(false)}
-              className="mt-2 flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-4 rounded-lg transition-colors"
+              className="mt-1 flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-4 rounded-lg transition-colors"
             >
               Get a Free SEO Audit
               <ArrowRight className="w-4 h-4" />

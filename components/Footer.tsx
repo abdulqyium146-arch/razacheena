@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
+import { Phone, Mail, MapPin, ArrowRight, MessageCircle } from "lucide-react";
+
+const WA_LINK = "https://wa.me/923474825228?text=Hi%20Raza%2C%20I%27d%20like%20to%20find%20out%20more%20about%20your%20Local%20SEO%20services.";
 
 const services = [
   { href: "/services#local-seo", label: "Local SEO" },
@@ -62,11 +64,20 @@ export default function Footer() {
             {/* NAP — critical for local SEO consistency */}
             <address className="not-italic space-y-2.5 text-sm">
               <a
-                href="tel:07700000000"
+                href="tel:03474825228"
                 className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors"
               >
                 <Phone className="w-4 h-4 text-blue-400 shrink-0" />
-                07700 000 000
+                0347 4825228
+              </a>
+              <a
+                href={WA_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors"
+              >
+                <MessageCircle className="w-4 h-4 text-[#25D366] shrink-0" />
+                WhatsApp: 0347 4825228
               </a>
               <a
                 href="mailto:hello@razacheena.com"

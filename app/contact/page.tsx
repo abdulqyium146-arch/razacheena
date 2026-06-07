@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Phone, Mail, Clock, MapPin } from "lucide-react";
+import { Phone, Mail, Clock, MapPin, MessageCircle } from "lucide-react";
+
+const WA_LINK = "https://wa.me/923474825228?text=Hi%20Raza%2C%20I%27d%20like%20to%20find%20out%20more%20about%20your%20Local%20SEO%20services.";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
@@ -44,9 +46,17 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "07700 000 000",
-    href: "tel:07700000000",
+    value: "0347 4825228",
+    href: "tel:03474825228",
     note: "Mon–Fri, 9am–6pm",
+  },
+  {
+    icon: MessageCircle,
+    label: "WhatsApp",
+    value: "0347 4825228",
+    href: WA_LINK,
+    note: "Fastest way to reach me",
+    external: true,
   },
   {
     icon: Mail,
@@ -119,29 +129,34 @@ export default function ContactPage() {
               </h2>
 
               <div className="space-y-5 mb-10">
-                {contactInfo.map(({ icon: Icon, label, value, href, note }) => (
-                  <div key={label} className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center shrink-0">
-                      <Icon className="w-5 h-5 text-blue-700" />
+                {contactInfo.map(({ icon: Icon, label, value, href, note, ...rest }) => {
+                  const isWa = label === "WhatsApp";
+                  return (
+                    <div key={label} className="flex items-start gap-4">
+                      <div className={`w-10 h-10 rounded-lg flex items-center justify-center shrink-0 ${isWa ? "bg-green-50" : "bg-blue-100"}`}>
+                        <Icon className={`w-5 h-5 ${isWa ? "text-[#25D366]" : "text-blue-700"}`} />
+                      </div>
+                      <div>
+                        <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-0.5">
+                          {label}
+                        </p>
+                        {href ? (
+                          <a
+                            href={href}
+                            target={"external" in rest ? "_blank" : undefined}
+                            rel={"external" in rest ? "noopener noreferrer" : undefined}
+                            className={`font-semibold transition-colors ${isWa ? "text-[#25D366] hover:text-green-600" : "text-slate-900 hover:text-blue-700"}`}
+                          >
+                            {value}
+                          </a>
+                        ) : (
+                          <p className="text-slate-900 font-semibold">{value}</p>
+                        )}
+                        <p className="text-slate-400 text-xs mt-0.5">{note}</p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-0.5">
-                        {label}
-                      </p>
-                      {href ? (
-                        <a
-                          href={href}
-                          className="text-slate-900 font-semibold hover:text-blue-700 transition-colors"
-                        >
-                          {value}
-                        </a>
-                      ) : (
-                        <p className="text-slate-900 font-semibold">{value}</p>
-                      )}
-                      <p className="text-slate-400 text-xs mt-0.5">{note}</p>
-                    </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
 
               {/* What to expect */}
