@@ -58,6 +58,28 @@ const personSchema = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://razacheena.com/" },
+    { "@type": "ListItem", position: 2, name: "About Raza Cheena", item: "https://razacheena.com/about/" },
+  ],
+};
+
+const profilePageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "https://razacheena.com/about/#webpage",
+  url: "https://razacheena.com/about/",
+  name: "About Raza Cheena | UK Local SEO Specialist",
+  description:
+    "Meet Raza Cheena — a UK Local SEO specialist and Next.js developer with 10+ years experience helping local service businesses rank higher and win more customers.",
+  isPartOf: { "@id": "https://razacheena.com/#website" },
+  mainEntity: { "@id": "https://razacheena.com/#person" },
+  inLanguage: "en-GB",
+};
+
 const expertRoles = [
   {
     icon: MapPin,
@@ -112,6 +134,14 @@ const values = [
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}

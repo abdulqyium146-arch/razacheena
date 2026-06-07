@@ -30,7 +30,10 @@ export const metadata: Metadata = {
   creator: "Raza Cheena",
   publisher: "Raza Cheena",
   metadataBase: new URL("https://razacheena.com"),
-  alternates: { canonical: "https://razacheena.com/" },
+  alternates: {
+    canonical: "https://razacheena.com/",
+    languages: { "en-GB": "https://razacheena.com/" },
+  },
   openGraph: {
     title: "Raza Cheena | UK Local SEO Specialist & Next.js Developer",
     description:

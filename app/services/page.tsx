@@ -29,6 +29,28 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://razacheena.com/" },
+    { "@type": "ListItem", position: 2, name: "Services", item: "https://razacheena.com/services/" },
+  ],
+};
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://razacheena.com/services/#webpage",
+  url: "https://razacheena.com/services/",
+  name: "UK Local SEO & Web Development Services | Raza Cheena",
+  description:
+    "Local SEO, Technical SEO, Semantic SEO, Next.js development, content writing, and SEO audits for UK local service businesses.",
+  isPartOf: { "@id": "https://razacheena.com/#website" },
+  about: { "@id": "https://razacheena.com/#person" },
+  inLanguage: "en-GB",
+};
+
 const servicesSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -150,6 +172,14 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}

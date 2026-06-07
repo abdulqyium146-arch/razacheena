@@ -31,24 +31,52 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://razacheena.com/" },
+    { "@type": "ListItem", position: 2, name: "Contact", item: "https://razacheena.com/contact/" },
+  ],
+};
+
 const contactSchema = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
+  "@id": "https://razacheena.com/contact/#webpage",
   name: "Contact Raza Cheena",
   url: "https://razacheena.com/contact/",
+  isPartOf: { "@id": "https://razacheena.com/#website" },
+  inLanguage: "en-GB",
   mainEntity: {
     "@type": "Person",
     "@id": "https://razacheena.com/#person",
     name: "Raza Cheena",
-    telephone: "07700000000",
+    telephone: "03474825228",
     email: "hello@razacheena.com",
-    contactPoint: {
-      "@type": "ContactPoint",
-      telephone: "07700000000",
-      contactType: "customer service",
-      areaServed: "GB",
-      availableLanguage: "English",
-    },
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: "03474825228",
+        contactType: "customer service",
+        contactOption: "TollFree",
+        areaServed: "GB",
+        availableLanguage: "English",
+        hoursAvailable: {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          opens: "09:00",
+          closes: "18:00",
+        },
+      },
+      {
+        "@type": "ContactPoint",
+        url: "https://wa.me/923474825228",
+        contactType: "customer service",
+        areaServed: "GB",
+        availableLanguage: "English",
+      },
+    ],
   },
 };
 
@@ -94,6 +122,10 @@ const contactInfo = [
 export default function ContactPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}

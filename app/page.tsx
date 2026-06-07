@@ -159,6 +159,48 @@ const faqs = [
   },
 ];
 
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://razacheena.com/#webpage",
+  url: "https://razacheena.com/",
+  name: "Raza Cheena | UK Local SEO Specialist & Next.js Developer",
+  description:
+    "UK Local SEO specialist helping local service businesses rank on Google Maps and Search. Expert in Technical SEO, Next.js development, and humanised content.",
+  isPartOf: { "@id": "https://razacheena.com/#website" },
+  about: { "@id": "https://razacheena.com/#person" },
+  inLanguage: "en-GB",
+  breadcrumb: {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://razacheena.com/" },
+    ],
+  },
+};
+
+const serviceRatingSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://razacheena.com/#professionalservice",
+  name: "Raza Cheena — UK Local SEO & Web Development",
+  url: "https://razacheena.com/",
+  provider: { "@id": "https://razacheena.com/#person" },
+  areaServed: { "@type": "Country", name: "United Kingdom" },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5",
+    reviewCount: "3",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  review: testimonials.map(({ name, rating, quote }) => ({
+    "@type": "Review",
+    author: { "@type": "Person", name },
+    reviewRating: { "@type": "Rating", ratingValue: String(rating), bestRating: "5" },
+    reviewBody: quote,
+  })),
+};
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -172,6 +214,14 @@ const faqSchema = {
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceRatingSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -509,10 +559,10 @@ export default function HomePage() {
               <ArrowRight className="w-4 h-4" />
             </Link>
             <a
-              href="tel:07700000000"
+              href="tel:03474825228"
               className="flex items-center justify-center gap-2 bg-white/30 hover:bg-white/50 text-slate-900 font-semibold text-base px-8 py-4 rounded-xl border border-slate-900/20 transition-colors"
             >
-              Call: 07700 000 000
+              Call: 0347 4825228
             </a>
           </div>
         </div>
