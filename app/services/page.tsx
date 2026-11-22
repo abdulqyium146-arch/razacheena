@@ -5,26 +5,26 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "UK Local SEO & Web Development Services | Raza Cheena",
+  title: "Global Local SEO & Web Development Services | Raza Cheena",
   description:
-    "Local SEO, Technical SEO, Semantic SEO, Next.js development, content writing, and SEO audits for UK local service businesses. Find out what's right for your business.",
+    "Local SEO, Technical SEO, Semantic SEO, Next.js development, content writing, and SEO audits for local service businesses worldwide. Find out what's right for your business.",
   authors: [{ name: "Raza Cheena", url: "https://razacheena.com/about/" }],
   creator: "Raza Cheena",
   alternates: { canonical: "https://razacheena.com/services/" },
   openGraph: {
-    title: "UK Local SEO & Web Development Services | Raza Cheena",
+    title: "Global Local SEO & Web Development Services | Raza Cheena",
     description:
-      "Six specialist services designed to help UK local businesses rank higher, win more customers, and grow online.",
+      "Six specialist services designed to help local businesses worldwide rank higher, win more customers, and grow online.",
     url: "https://razacheena.com/services/",
     siteName: "Raza Cheena",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "UK Local SEO & Web Development Services — Raza Cheena", type: "image/jpeg" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Global Local SEO & Web Development Services — Raza Cheena", type: "image/jpeg" }],
     locale: "en_GB",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "UK Local SEO & Web Development Services | Raza Cheena",
-    description: "Six specialist services to help UK local businesses rank higher, win more customers, and grow online.",
+    title: "Global Local SEO & Web Development Services | Raza Cheena",
+    description: "Six specialist services to help local businesses worldwide rank higher, win more customers, and grow online.",
     images: ["/og-image.jpg"],
   },
 };
@@ -43,9 +43,9 @@ const webPageSchema = {
   "@type": "CollectionPage",
   "@id": "https://razacheena.com/services/#webpage",
   url: "https://razacheena.com/services/",
-  name: "UK Local SEO & Web Development Services | Raza Cheena",
+  name: "Global Local SEO & Web Development Services | Raza Cheena",
   description:
-    "Local SEO, Technical SEO, Semantic SEO, Next.js development, content writing, and SEO audits for UK local service businesses.",
+    "Local SEO, Technical SEO, Semantic SEO, Next.js development, content writing, and SEO audits for local service businesses worldwide.",
   isPartOf: { "@id": "https://razacheena.com/#website" },
   about: { "@id": "https://razacheena.com/#person" },
   inLanguage: "en-GB",
@@ -55,10 +55,10 @@ const servicesSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   provider: { "@id": "https://razacheena.com/#person" },
-  areaServed: { "@type": "Country", name: "United Kingdom" },
+  areaServed: { "@type": "Place", name: "Worldwide" },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
-    name: "UK Local SEO & Web Development Services",
+    name: "Global Local SEO & Web Development Services",
     itemListElement: [
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Local SEO" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Technical SEO" } },
@@ -77,7 +77,7 @@ const services = [
     title: "Local SEO",
     tagline: "Dominate Google Maps and the Local Pack",
     description:
-      "Local SEO is the single most powerful marketing channel for UK local service businesses. When someone searches 'plumber near me' or 'electrician in Manchester', you need to be in the top three results. I make that happen.",
+      "Local SEO is the single most powerful marketing channel for local service businesses worldwide. When someone searches 'plumber near me' or 'electrician in Manchester', you need to be in the top three results. I make that happen.",
     bullets: [
       "Google Business Profile optimisation and management",
       "Local citation building and NAP consistency",
@@ -125,9 +125,9 @@ const services = [
     title: "Next.js Development",
     tagline: "Fast, Beautiful Websites Built to Rank",
     description:
-      "Your website is your most important marketing asset. I build fast, conversion-optimised websites with Next.js 14 that look stunning, load instantly, and are built for SEO from the ground up — not retrofitted as an afterthought.",
+      "Your website is your most important marketing asset. I build fast, conversion-optimised websites with Next.js 16 that look stunning, load instantly, and are built for SEO from the ground up — not retrofitted as an afterthought.",
     bullets: [
-      "Next.js 14 with App Router and Server Components",
+      "Next.js 16 with App Router and Server Components",
       "Tailwind CSS and shadcn/ui design system",
       "Full SEO implementation baked in",
       "Core Web Vitals optimised by default",
@@ -139,15 +139,15 @@ const services = [
     id: "content-writing",
     icon: PenLine,
     title: "Content Writing",
-    tagline: "UK English Copy That Ranks and Converts",
+    tagline: "Human Copy That Ranks and Converts",
     description:
-      "Great content is the foundation of every successful SEO strategy. I write humanised, E-E-A-T optimised copy in natural UK English that Google loves and your customers actually want to read — service pages, location pages, and blog articles.",
+      "Great content is the foundation of every successful SEO strategy. I write humanised, E-E-A-T optimised copy in natural, human English that Google loves and your customers actually want to read — service pages, location pages, and blog articles.",
     bullets: [
       "Service and location page copywriting",
       "E-E-A-T signals (Experience, Expertise, Authority, Trust)",
       "FAQ content with FAQPage schema",
       "Blog articles and AEO-formatted content",
-      "UK English — colour, optimise, realise, centre",
+      "Natural English — clear, human, jargon-free",
       "Natural keyword integration, never stuffed",
     ],
   },
@@ -200,7 +200,7 @@ export default function ServicesPage() {
               className="text-4xl md:text-5xl font-extrabold text-white mb-6"
               style={{ fontFamily: "var(--font-sora)" }}
             >
-              UK Local SEO &amp; Web Development Services
+              Global Local SEO &amp; Web Development Services
             </h1>
             <p className="text-slate-300 text-lg leading-relaxed">
               Six specialist services working together to help your local business rank

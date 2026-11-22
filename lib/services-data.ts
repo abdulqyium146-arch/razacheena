@@ -18,10 +18,10 @@ export const servicesData: ServiceData[] = [
     title: "Local SEO",
     tagline: "Dominate Google Maps and the Local Pack",
     shortDescription:
-      "Local SEO is the single most powerful marketing channel for UK local service businesses. When someone searches 'plumber near me' or 'electrician in Manchester', you need to be in the top three results. I make that happen.",
+      "Local SEO is the single most powerful marketing channel for local service businesses worldwide. When someone searches 'plumber near me' or 'electrician in Manchester', you need to be in the top three results. I make that happen.",
     longDescription: [
-      "When someone in your town searches for the services you offer, do they find you — or your competitors? For UK local service businesses, Local SEO is the difference between a phone that rings and one that doesn't.",
-      "I specialise exclusively in Local SEO for UK businesses. That means I understand the nuances of Google Business Profile management in the UK, how local citations work differently here, and what it actually takes to rank in British towns and cities.",
+      "When someone in your town searches for the services you offer, do they find you — or your competitors? For local service businesses worldwide, Local SEO is the difference between a phone that rings and one that doesn't.",
+      "I specialise in Local SEO for local businesses worldwide. That means I understand the nuances of Google Business Profile management, how local citations work in different markets, and what it actually takes to rank in your city — wherever it is.",
       "Every strategy I build is specific to your service area, your competition, and your customers' search behaviour. No templates, no guesswork — just methodical, data-driven Local SEO that gets you in front of the right people at exactly the right moment.",
     ],
     bullets: [
@@ -34,9 +34,9 @@ export const servicesData: ServiceData[] = [
     ],
     whyItMatters:
       "Over 46% of all Google searches have local intent. When someone searches 'plumber near me' or 'electrician Manchester', they are ready to book. Without Local SEO, you are invisible to the customers most likely to hire you today.",
-    metaTitle: "Local SEO Services UK | Google Maps & Local Pack Rankings | Raza Cheena",
+    metaTitle: "Local SEO Services | Google Maps & Local Pack | Raza Cheena",
     metaDescription:
-      "Expert Local SEO for UK service businesses. Google Business Profile optimisation, local pack rankings, citation building, and review strategy. Free SEO audit available.",
+      "Expert Local SEO for service businesses worldwide. Google Business Profile optimisation, local pack rankings, citation building, and review strategy. Free SEO audit available.",
   },
   {
     slug: "technical-seo",
@@ -60,9 +60,9 @@ export const servicesData: ServiceData[] = [
     ],
     whyItMatters:
       "Google's ranking algorithms include over 200 signals — and many of them are technical. A site that loads slowly, has crawl errors, or lacks structured data is actively penalised. Technical SEO removes every barrier between your content and a top ranking.",
-    metaTitle: "Technical SEO Services UK | Core Web Vitals & Site Audit | Raza Cheena",
+    metaTitle: "Technical SEO Services | Core Web Vitals & Audit | Raza Cheena",
     metaDescription:
-      "Technical SEO audits and implementation for UK websites. Core Web Vitals, schema markup, crawlability, and indexation fixes. Get your site technically perfect.",
+      "Technical SEO audits and implementation for websites worldwide. Core Web Vitals, schema markup, crawlability, and indexation fixes. Get your site technically perfect.",
   },
   {
     slug: "semantic-seo",
@@ -86,9 +86,9 @@ export const servicesData: ServiceData[] = [
     ],
     whyItMatters:
       "Google's Helpful Content system and AI-powered ranking now evaluate topical authority holistically. Sites with deep, interconnected content on a subject consistently outrank those with isolated, keyword-stuffed pages.",
-    metaTitle: "Semantic SEO Services UK | Topical Authority & Entity Optimisation | Raza Cheena",
+    metaTitle: "Semantic SEO Services | Topical Authority | Raza Cheena",
     metaDescription:
-      "Build topical authority with semantic SEO. Entity mapping, topic clusters, NLP-optimised content, and AI Overview targeting for UK businesses. Free audit available.",
+      "Build topical authority with semantic SEO. Entity mapping, topic clusters, NLP-optimised content, and AI Overview targeting for businesses worldwide. Free audit available.",
   },
   {
     slug: "nextjs-development",
@@ -112,20 +112,20 @@ export const servicesData: ServiceData[] = [
     ],
     whyItMatters:
       "Page experience is now a confirmed Google ranking factor. Sites that load in under 2.5 seconds with stable layouts consistently outrank slower competitors. A Next.js website built with SEO in mind starts with a huge technical advantage.",
-    metaTitle: "Next.js Web Development UK | SEO-Ready Websites | Raza Cheena",
+    metaTitle: "Next.js Web Development | SEO-Ready Websites | Raza Cheena",
     metaDescription:
-      "Fast, beautiful Next.js websites built with SEO at the core. App Router, TypeScript, Tailwind CSS, Core Web Vitals optimised by default. For UK local businesses.",
+      "Fast, beautiful Next.js websites built with SEO at the core. App Router, TypeScript, Tailwind CSS, Core Web Vitals optimised by default. For local businesses worldwide.",
   },
   {
     slug: "content-writing",
     iconName: "PenLine",
     title: "Content Writing",
-    tagline: "UK English Copy That Ranks and Converts",
+    tagline: "Human Copy That Ranks and Converts",
     shortDescription:
-      "Great content is the foundation of every successful SEO strategy. I write humanised, E-E-A-T optimised copy in natural UK English that Google loves and your customers actually want to read — service pages, location pages, and blog articles.",
+      "Great content is the foundation of every successful SEO strategy. I write humanised, E-E-A-T optimised copy in natural, human English that Google loves and your customers actually want to read — service pages, location pages, and blog articles.",
     longDescription: [
       "Most SEO content reads like it was written by a robot — because it was. Keyword-stuffed, awkward, and robotic copy might have worked in 2015. Today, Google's algorithms are sophisticated enough to evaluate genuinely helpful, expert content.",
-      "I write content that demonstrates real Experience, Expertise, Authority, and Trust (E-E-A-T) — the signals Google now uses to evaluate content quality. Every piece I write is in natural UK English and reads like it was written by a knowledgeable local professional.",
+      "I write content that demonstrates real Experience, Expertise, Authority, and Trust (E-E-A-T) — the signals Google now uses to evaluate content quality. Every piece I write is in natural, human English and reads like it was written by a knowledgeable local professional.",
       "From service pages and location pages to FAQ content and blog articles, I write copy that ranks in search and converts when it arrives. You'll never have to apologise for your website content again.",
     ],
     bullets: [
@@ -133,14 +133,14 @@ export const servicesData: ServiceData[] = [
       "E-E-A-T signals (Experience, Expertise, Authority, Trust)",
       "FAQ content with FAQPage schema",
       "Blog articles and AEO-formatted content",
-      "UK English — colour, optimise, realise, centre",
+      "Natural English — clear, human, jargon-free",
       "Natural keyword integration, never stuffed",
     ],
     whyItMatters:
       "Google's Helpful Content update demoted millions of pages of generic, keyword-focused content. Sites with genuine, expert, humanised content now dominate. The quality of your writing is now a direct ranking factor.",
-    metaTitle: "SEO Content Writing UK | E-E-A-T Optimised Copy | Raza Cheena",
+    metaTitle: "SEO Content Writing | E-E-A-T Optimised Copy | Raza Cheena",
     metaDescription:
-      "UK English SEO content writing with genuine E-E-A-T signals. Service pages, location pages, blog articles, and FAQ content that ranks and converts.",
+      "Human SEO content writing with genuine E-E-A-T signals. Service pages, location pages, blog articles, and FAQ content that ranks and converts.",
   },
   {
     slug: "seo-audits",
@@ -164,9 +164,9 @@ export const servicesData: ServiceData[] = [
     ],
     whyItMatters:
       "Without an audit, you're investing in SEO without knowing where the problems are. An audit ensures every penny you spend is directed at the highest-impact changes — not guesswork.",
-    metaTitle: "SEO Audit Services UK | Technical & Local SEO Audit | Raza Cheena",
+    metaTitle: "SEO Audit Services | Technical & Local SEO Audit | Raza Cheena",
     metaDescription:
-      "Comprehensive SEO audits for UK businesses. Technical SEO, on-page analysis, Google Business Profile review, and competitor benchmarking. Free initial audit available.",
+      "Comprehensive SEO audits for businesses worldwide. Technical SEO, on-page analysis, Google Business Profile review, and competitor benchmarking. Free initial audit available.",
   },
 ];
 

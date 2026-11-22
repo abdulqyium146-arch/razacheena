@@ -12,27 +12,27 @@ import {
 } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
-  title: "Raza Cheena | UK Local SEO Specialist & Next.js Developer",
+  title: "Raza Cheena | Global Local SEO Expert & Next.js Developer",
   description:
-    "UK Local SEO specialist helping local service businesses rank on Google Maps and Search. Expert in Technical SEO, Next.js development, and humanised content. Free SEO audit available.",
+    "Global Local SEO expert helping local service businesses worldwide rank on Google Maps and Search. Expert in Technical SEO, Next.js development, and humanised content. Free SEO audit available.",
   authors: [{ name: "Raza Cheena", url: "https://razacheena.com/about/" }],
   creator: "Raza Cheena",
   publisher: "Raza Cheena",
   alternates: { canonical: "https://razacheena.com/" },
   openGraph: {
-    title: "Raza Cheena | UK Local SEO Specialist & Next.js Developer",
+    title: "Raza Cheena | Global Local SEO Expert & Next.js Developer",
     description:
-      "Helping UK local service businesses rank higher on Google, win more customers, and grow online.",
+      "Helping local service businesses worldwide rank higher on Google, win more customers, and grow online.",
     url: "https://razacheena.com/",
     siteName: "Raza Cheena",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Raza Cheena — UK Local SEO Specialist", type: "image/jpeg" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Raza Cheena — Global Local SEO Expert", type: "image/jpeg" }],
     locale: "en_GB",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Raza Cheena | UK Local SEO Specialist & Next.js Developer",
-    description: "Helping UK local service businesses rank higher on Google and win more customers.",
+    title: "Raza Cheena | Global Local SEO Expert & Next.js Developer",
+    description: "Helping local service businesses worldwide rank higher on Google and win more customers.",
     images: ["/og-image.jpg"],
   },
 };
@@ -64,14 +64,14 @@ const services = [
     icon: Code2,
     title: "Next.js Development",
     description:
-      "Beautiful, lightning-fast websites built with Next.js 14. Every site I build is SEO-ready from day one — schema, metadata, Core Web Vitals all sorted.",
+      "Beautiful, lightning-fast websites built with Next.js 16. Every site I build is SEO-ready from day one — schema, metadata, Core Web Vitals all sorted.",
   },
   {
     id: "content-writing",
     icon: PenLine,
     title: "Content Writing",
     description:
-      "E-E-A-T optimised, humanised copy in natural UK English. Content that ranks, reads brilliantly, and converts visitors into paying customers.",
+      "E-E-A-T optimised, humanised copy in natural, human English. Content that ranks, reads brilliantly, and converts visitors into paying customers.",
   },
   {
     id: "seo-audits",
@@ -86,7 +86,7 @@ const stats = [
   { icon: Users, value: "50+", label: "Local Businesses Helped" },
   { icon: Clock, value: "10+", label: "Years of Experience" },
   { icon: TrendingUp, value: "£2M+", label: "Revenue Generated for Clients" },
-  { icon: Award, value: "100%", label: "UK-Focused, Results-Driven" },
+  { icon: Award, value: "36", label: "Cities Served Worldwide" },
 ];
 
 const differentiators = [
@@ -96,9 +96,9 @@ const differentiators = [
       "You don't get a junior account manager with a template strategy. You get a UI/UX designer, Local SEO strategist, Technical SEO expert, Semantic SEO specialist, and humanised content writer — all in one person, working on your project.",
   },
   {
-    title: "UK-Only Focus",
+    title: "Global Reach, Local Expertise",
     description:
-      "I work exclusively with UK local service businesses. That means I understand Google Business Profile in the UK, local search behaviour, and what it takes to rank in British towns and cities — not generic global advice.",
+      "I work with local service businesses all over the world. That means I understand Google Business Profile, local search behaviour in your market, and what it takes to rank in your city — not generic, one-size-fits-all advice.",
   },
   {
     title: "Measurable Results",
@@ -109,33 +109,40 @@ const differentiators = [
 
 const testimonials = [
   {
-    name: "James Hargreaves",
-    business: "Hargreaves Plumbing, Manchester",
+    name: "Anthony Quayle",
+    business: "SRV Detailing · via Google",
     rating: 5,
     quote:
-      "Raza got us ranking in the local pack for 'plumber Manchester' within four months. Our phone hasn't stopped ringing since. Best investment we've made for the business.",
+      "I can not thanks this company enough from start to finish the company has turned my company around with great revenue coming regular amazing comments on the website and communication is 100%",
   },
   {
-    name: "Sarah Mitchell",
-    business: "SM Electrical Services, Leeds",
+    name: "Vikki Heaton",
+    business: "via Google",
     rating: 5,
     quote:
-      "We went from page three to position one for our main keywords in under six months. Raza's approach is methodical, transparent, and most importantly — it works.",
+      "Raza is great at what he does he puts 100% effort into helping us grow our business and keeps in touch daily He goes above and beyond for us an we appreciate his hard work",
   },
   {
-    name: "Tom Archer",
-    business: "Archer Roofing, Bristol",
+    name: "Roberto Ruiz Mirabal",
+    business: "R.R.M External Cleaning Specialist · via Google",
     rating: 5,
     quote:
-      "Not only did he sort our SEO, he rebuilt our website too. It's faster, looks brilliant on mobile, and converts so much better than the old one. Highly recommend.",
+      "This company has been incredibly helpful to my business (R.R.M External Cleaning Specialist). Raza is a very kind and friendly person who truly goes out of his way to support you. I highly recommend them — 100%.",
+  },
+  {
+    name: "Kevin Silvestre",
+    business: "KJS Supreme Pressure Washing · via Google",
+    rating: 5,
+    quote:
+      "This team is very professional and will get all your marketing and SCO down back to the T have been working with him for a few months now and you can definitely see the difference. He will take care of all your social media and all your GMB profile profiles and get you moving you can take a look at my company through KJS Supreme Pressure Washing.",
   },
 ];
 
 const faqs = [
   {
-    question: "What is Local SEO and why does my UK business need it?",
+    question: "What is Local SEO and why does my local business need it?",
     answer:
-      "Local SEO is the process of optimising your online presence so your business appears prominently when people nearby search for your services on Google. For UK local service businesses — plumbers, electricians, roofers, cleaners, and more — Local SEO is how you get found by the customers who are ready to hire you right now. Without it, you're invisible to the people searching in your area.",
+      "Local SEO is the process of optimising your online presence so your business appears prominently when people nearby search for your services on Google. For local service businesses worldwide — plumbers, electricians, roofers, cleaners, and more — Local SEO is how you get found by the customers who are ready to hire you right now. Without it, you're invisible to the people searching in your area.",
   },
   {
     question: "How long does it take to see results from Local SEO?",
@@ -143,9 +150,9 @@ const faqs = [
       "Most clients start seeing meaningful movement in rankings within two to four months. Google Business Profile improvements often show results faster — sometimes within weeks. Full local pack domination for competitive keywords typically takes six to 12 months, depending on your industry and location. I'll always give you an honest timeline based on your specific situation.",
   },
   {
-    question: "Do you work with businesses across the UK?",
+    question: "Do you work with businesses worldwide?",
     answer:
-      "Yes, I work with local service businesses all across the UK — from London and Manchester to smaller towns and rural areas. Whether you're targeting a single city or multiple service areas, I'll build a strategy tailored to your specific locations and the search behaviour of your local customers.",
+      "Yes, I work with local service businesses all over the world — from London and Manchester to New York, Dubai, Sydney, and smaller towns everywhere. Whether you're targeting a single city or multiple service areas, I'll build a strategy tailored to your specific locations and the search behaviour of your local customers.",
   },
   {
     question: "What makes you different from other SEO agencies?",
@@ -164,9 +171,9 @@ const webPageSchema = {
   "@type": "WebPage",
   "@id": "https://razacheena.com/#webpage",
   url: "https://razacheena.com/",
-  name: "Raza Cheena | UK Local SEO Specialist & Next.js Developer",
+  name: "Raza Cheena | Global Local SEO Expert & Next.js Developer",
   description:
-    "UK Local SEO specialist helping local service businesses rank on Google Maps and Search. Expert in Technical SEO, Next.js development, and humanised content.",
+    "Global Local SEO expert helping local service businesses worldwide rank on Google Maps and Search. Expert in Technical SEO, Next.js development, and humanised content.",
   isPartOf: { "@id": "https://razacheena.com/#website" },
   about: { "@id": "https://razacheena.com/#person" },
   inLanguage: "en-GB",
@@ -182,14 +189,14 @@ const serviceRatingSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "@id": "https://razacheena.com/#professionalservice",
-  name: "Raza Cheena — UK Local SEO & Web Development",
+  name: "Raza Cheena Local SEO",
   url: "https://razacheena.com/",
   provider: { "@id": "https://razacheena.com/#person" },
-  areaServed: { "@type": "Country", name: "United Kingdom" },
+  areaServed: { "@type": "Place", name: "Worldwide" },
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5",
-    reviewCount: "3",
+    reviewCount: "4",
     bestRating: "5",
     worstRating: "1",
   },
@@ -245,7 +252,7 @@ export default function HomePage() {
               <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
               <span>
                 <span className="text-white font-semibold">Raza Cheena</span>
-                {" · "}UK Local SEO Specialist
+                {" · "}Global Local SEO Expert
               </span>
             </div>
 
@@ -253,14 +260,14 @@ export default function HomePage() {
               className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.1] tracking-tight mb-6"
               style={{ fontFamily: "var(--font-sora)" }}
             >
-              Helping UK Local Businesses{" "}
+              Helping Local Businesses Worldwide{" "}
               <span className="text-amber-400">Rank Higher</span> &amp; Win More
               Customers
             </h1>
 
             <p className="text-lg sm:text-xl text-slate-300 leading-relaxed mb-8 max-w-2xl">
               I combine Local SEO, Technical SEO, and fast Next.js web development to help
-              UK local service businesses dominate Google Maps and Search — bringing in a
+              local service businesses worldwide dominate Google Maps and Search — bringing in a
               steady flow of local customers every single day.
             </p>
 
@@ -283,7 +290,7 @@ export default function HomePage() {
             <div className="mt-10 flex flex-wrap gap-6 text-slate-400 text-sm">
               {[
                 "✓ No lock-in contracts",
-                "✓ UK English copy guaranteed",
+                "✓ Human, natural English copy",
                 "✓ Transparent monthly reporting",
               ].map((item) => (
                 <span key={item}>{item}</span>
@@ -471,11 +478,11 @@ export default function HomePage() {
               What My Clients Say
             </h2>
             <p className="text-slate-500 text-lg max-w-2xl mx-auto">
-              Real results for real UK local businesses. Don't take my word for it.
+              Real results for real local businesses worldwide. Don't take my word for it — take theirs.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {testimonials.map(({ name, business, rating, quote }) => (
               <div
                 key={name}
@@ -510,7 +517,7 @@ export default function HomePage() {
               Frequently Asked Questions
             </h2>
             <p className="text-slate-500 text-lg">
-              Everything you need to know about working with a UK Local SEO specialist.
+              Everything you need to know about working with a global Local SEO expert.
             </p>
           </div>
 
@@ -559,10 +566,10 @@ export default function HomePage() {
               <ArrowRight className="w-4 h-4" />
             </Link>
             <a
-              href="tel:03474825228"
+              href="tel:+923474825228"
               className="flex items-center justify-center gap-2 bg-white/30 hover:bg-white/50 text-slate-900 font-semibold text-base px-8 py-4 rounded-xl border border-slate-900/20 transition-colors"
             >
-              Call: 0347 4825228
+              Call: +92 347 4825228
             </a>
           </div>
         </div>

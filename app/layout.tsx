@@ -21,11 +21,11 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Raza Cheena | UK Local SEO Specialist & Next.js Developer",
-    template: "%s | Raza Cheena",
+    default: "Raza Cheena | Global Local SEO Expert & Next.js Developer",
+    template: "%s",
   },
   description:
-    "Raza Cheena is a UK Local SEO specialist and Next.js developer helping local service businesses rank higher on Google, win more customers, and grow online. Free SEO audit available.",
+    "Raza Cheena is a global Local SEO expert and Next.js developer helping local service businesses worldwide rank higher on Google, win more customers, and grow online. Free SEO audit available.",
   authors: [{ name: "Raza Cheena", url: "https://razacheena.com/about/" }],
   creator: "Raza Cheena",
   publisher: "Raza Cheena",
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     languages: { "en-GB": "https://razacheena.com/" },
   },
   openGraph: {
-    title: "Raza Cheena | UK Local SEO Specialist & Next.js Developer",
+    title: "Raza Cheena | Global Local SEO Expert & Next.js Developer",
     description:
-      "UK Local SEO specialist helping local service businesses rank on Google Maps and Search. Expert in Technical SEO, Next.js development, and humanised content.",
+      "Global Local SEO expert helping local service businesses worldwide rank on Google Maps and Search. Expert in Technical SEO, Next.js development, and humanised content.",
     url: "https://razacheena.com/",
     siteName: "Raza Cheena",
     images: [
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Raza Cheena — UK Local SEO Specialist",
+        alt: "Raza Cheena — Global Local SEO Expert",
         type: "image/jpeg",
       },
     ],
@@ -56,9 +56,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@razacheena",
     creator: "@razacheena",
-    title: "Raza Cheena | UK Local SEO Specialist",
+    title: "Raza Cheena | Global Local SEO Expert",
     description:
-      "UK Local SEO specialist helping local businesses rank higher and win more customers online.",
+      "Global Local SEO expert helping local businesses worldwide rank higher and win more customers online.",
     images: ["/og-image.jpg"],
   },
   verification: {
@@ -85,15 +85,15 @@ const jsonLd = {
       "@id": "https://razacheena.com/#person",
       name: "Raza Cheena",
       url: "https://razacheena.com/",
-      image: {
-        "@type": "ImageObject",
-        url: "https://razacheena.com/raza-cheena.jpg",
-        width: 400,
-        height: 400,
+      telephone: "+923474825228",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Quetta",
+        addressCountry: "PK",
       },
-      jobTitle: "UK Local SEO Specialist & Full-Stack Developer",
+      jobTitle: "Global Local SEO Expert & Full-Stack Developer",
       description:
-        "Raza Cheena is a UK Local SEO specialist and Next.js developer with 10+ years of experience helping local service businesses rank on Google, win more customers, and grow online.",
+        "Raza Cheena is a global Local SEO expert and Next.js developer with 10+ years of experience helping local service businesses worldwide rank on Google, win more customers, and grow online.",
       knowsAbout: [
         "Local SEO",
         "Google Business Profile Optimisation",
@@ -110,7 +110,7 @@ const jsonLd = {
       hasOccupation: {
         "@type": "Occupation",
         name: "SEO Specialist & Web Developer",
-        occupationLocation: { "@type": "Country", name: "United Kingdom" },
+        occupationLocation: { "@type": "Country", name: "Pakistan" },
         skills:
           "Local SEO, Technical SEO, Semantic SEO, Next.js, Tailwind CSS, TypeScript",
       },
@@ -119,9 +119,9 @@ const jsonLd = {
       "@type": "WebSite",
       "@id": "https://razacheena.com/#website",
       url: "https://razacheena.com/",
-      name: "Raza Cheena — UK Local SEO Specialist",
+      name: "Raza Cheena — Global Local SEO Expert",
       description:
-        "UK Local SEO specialist and Next.js developer helping local service businesses rank higher and win more customers online.",
+        "Global Local SEO expert and Next.js developer helping local service businesses worldwide rank higher and win more customers online.",
       publisher: { "@id": "https://razacheena.com/#person" },
       inLanguage: "en-GB",
     },

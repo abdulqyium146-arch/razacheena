@@ -40,9 +40,22 @@ export default function ContactForm() {
   } = useForm<FormData>({ resolver: zodResolver(schema) });
 
   async function onSubmit(data: FormData) {
-    // Replace with your form submission endpoint (e.g. Resend, Formspree, etc.)
-    await new Promise((res) => setTimeout(res, 800));
-    console.log(data);
+    // No backend yet — send the enquiry straight to WhatsApp so no lead is lost.
+    // (Swap this for a Resend/Formspree endpoint when one is chosen.)
+    const lines = [
+      "Hi Raza, I'd like a free SEO audit.",
+      "",
+      `Name: ${data.name}`,
+      `Email: ${data.email}`,
+      data.phone ? `Phone: ${data.phone}` : "",
+      `Business type: ${data.businessType}`,
+      "",
+      data.message,
+    ].filter(Boolean);
+    window.open(
+      `https://wa.me/923474825228?text=${encodeURIComponent(lines.join("\n"))}`,
+      "_blank"
+    );
     setSubmitted(true);
   }
 
@@ -54,11 +67,12 @@ export default function ContactForm() {
           className="text-xl font-bold text-slate-900 mb-2"
           style={{ fontFamily: "var(--font-sora)" }}
         >
-          Message Received!
+          Opening WhatsApp…
         </h3>
         <p className="text-slate-500 text-sm">
-          Thanks for getting in touch. I'll review your details and get back to you within
-          one business day.
+          Your details are ready to send in WhatsApp — just press send in the chat and
+          I'll review them and get back to you within one business day. Prefer email?
+          Write to hello@razacheena.com.
         </p>
       </div>
     );
@@ -80,7 +94,7 @@ export default function ContactForm() {
           id="name"
           type="text"
           autoComplete="name"
-          placeholder="e.g. James Hargreaves"
+          placeholder="e.g. John Smith"
           className="w-full border border-slate-200 rounded-lg px-4 py-3 text-slate-900 placeholder:text-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
         />
         {errors.name && (
@@ -98,7 +112,7 @@ export default function ContactForm() {
           id="email"
           type="email"
           autoComplete="email"
-          placeholder="james@hargreavesplumbing.co.uk"
+          placeholder="john@yourbusiness.com"
           className="w-full border border-slate-200 rounded-lg px-4 py-3 text-slate-900 placeholder:text-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
         />
         {errors.email && (
@@ -164,7 +178,7 @@ export default function ContactForm() {
         disabled={isSubmitting}
         className="w-full flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 disabled:opacity-60 disabled:cursor-not-allowed text-white font-bold py-4 rounded-xl transition-colors text-sm"
       >
-        {isSubmitting ? "Sending…" : "Send My Message"}
+        {isSubmitting ? "Sending…" : "Send via WhatsApp"}
         {!isSubmitting && <ArrowRight className="w-4 h-4" />}
       </button>
 

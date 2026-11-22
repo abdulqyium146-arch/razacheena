@@ -5,27 +5,27 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Raza Cheena | UK Local SEO Specialist",
+  title: "About Raza Cheena | Global Local SEO Expert",
   description:
-    "Meet Raza Cheena — a UK Local SEO specialist and Next.js developer with 10+ years' experience helping local service businesses rank higher and win more customers online.",
+    "Meet Raza Cheena — a global Local SEO expert and Next.js developer with 10+ years' experience helping local service businesses worldwide rank higher and win more customers online.",
   authors: [{ name: "Raza Cheena", url: "https://razacheena.com/about/" }],
   creator: "Raza Cheena",
   publisher: "Raza Cheena",
   alternates: { canonical: "https://razacheena.com/about/" },
   openGraph: {
-    title: "About Raza Cheena | UK Local SEO Specialist",
+    title: "About Raza Cheena | Global Local SEO Expert",
     description:
-      "10+ years helping UK local businesses dominate Google. Senior-level expertise across Local SEO, Technical SEO, Semantic SEO, Next.js development, and content writing.",
+      "10+ years helping local businesses worldwide dominate Google. Senior-level expertise across Local SEO, Technical SEO, Semantic SEO, Next.js development, and content writing.",
     url: "https://razacheena.com/about/",
     siteName: "Raza Cheena",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "About Raza Cheena — UK Local SEO Specialist", type: "image/jpeg" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "About Raza Cheena — Global Local SEO Expert", type: "image/jpeg" }],
     locale: "en_GB",
     type: "profile",
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Raza Cheena | UK Local SEO Specialist",
-    description: "10+ years helping UK local businesses dominate Google. Five-in-one expert: Local SEO, Technical SEO, Semantic SEO, Next.js, Content.",
+    title: "About Raza Cheena | Global Local SEO Expert",
+    description: "10+ years helping local businesses worldwide dominate Google. Five-in-one expert: Local SEO, Technical SEO, Semantic SEO, Next.js, Content.",
     images: ["/og-image.jpg"],
   },
 };
@@ -36,9 +36,9 @@ const personSchema = {
   "@id": "https://razacheena.com/#person",
   name: "Raza Cheena",
   url: "https://razacheena.com",
-  jobTitle: "UK Local SEO Specialist & Full-Stack Developer",
+  jobTitle: "Global Local SEO Expert & Full-Stack Developer",
   description:
-    "Raza Cheena is a UK-based Local SEO specialist and Next.js developer with over 10 years of experience helping local service businesses rank on Google and grow their customer base.",
+    "Raza Cheena is a global Local SEO expert and Next.js developer based in Quetta, Pakistan, with over 10 years of experience helping local service businesses worldwide rank on Google and grow their customer base.",
   knowsAbout: [
     "Local SEO",
     "Google Business Profile Optimisation",
@@ -54,7 +54,7 @@ const personSchema = {
   hasOccupation: {
     "@type": "Occupation",
     name: "SEO Specialist & Web Developer",
-    occupationLocation: { "@type": "Country", name: "United Kingdom" },
+    occupationLocation: { "@type": "Country", name: "Pakistan" },
   },
 };
 
@@ -72,9 +72,9 @@ const profilePageSchema = {
   "@type": "ProfilePage",
   "@id": "https://razacheena.com/about/#webpage",
   url: "https://razacheena.com/about/",
-  name: "About Raza Cheena | UK Local SEO Specialist",
+  name: "About Raza Cheena | Global Local SEO Expert",
   description:
-    "Meet Raza Cheena — a UK Local SEO specialist and Next.js developer with 10+ years experience helping local service businesses rank higher and win more customers.",
+    "Meet Raza Cheena — a global Local SEO expert and Next.js developer with 10+ years experience helping local service businesses worldwide rank higher and win more customers.",
   isPartOf: { "@id": "https://razacheena.com/#website" },
   mainEntity: { "@id": "https://razacheena.com/#person" },
   inLanguage: "en-GB",
@@ -85,7 +85,7 @@ const expertRoles = [
     icon: MapPin,
     title: "Local SEO Strategist",
     description:
-      "Google Business Profile, local pack rankings, citation management, and service area pages. I know exactly what it takes to rank in competitive UK local markets.",
+      "Google Business Profile, local pack rankings, citation management, and service area pages. I know exactly what it takes to rank in competitive local markets worldwide.",
   },
   {
     icon: Settings,
@@ -103,13 +103,13 @@ const expertRoles = [
     icon: Code2,
     title: "Next.js Developer",
     description:
-      "Full-stack websites built with Next.js 14, Tailwind CSS, and TypeScript. Fast, beautiful, and SEO-ready from the very first line of code.",
+      "Full-stack websites built with Next.js 16, Tailwind CSS, and TypeScript. Fast, beautiful, and SEO-ready from the very first line of code.",
   },
   {
     icon: PenLine,
     title: "Humanised Content Writer",
     description:
-      "UK English copy with genuine E-E-A-T signals. I write like a knowledgeable local expert — not a keyword-stuffing robot or a corporate brochure.",
+      "Clear, human English copy with genuine E-E-A-T signals. I write like a knowledgeable local expert — not a keyword-stuffing robot or a corporate brochure.",
   },
 ];
 
@@ -171,11 +171,11 @@ export default function AboutPage() {
               About Raza Cheena
             </h1>
             <p className="text-slate-300 text-lg leading-relaxed">
-              UK Local SEO specialist and Next.js developer helping local service businesses
-              rank higher, attract more customers, and build a sustainable online presence.
+              Global Local SEO expert and Next.js developer helping local service businesses
+              worldwide rank higher, attract more customers, and build a sustainable online presence.
             </p>
             <p className="text-slate-400 text-sm mt-3">
-              <span className="font-medium text-slate-300">Raza Cheena</span> · UK Local SEO Specialist · 10+ years experience
+              <span className="font-medium text-slate-300">Raza Cheena</span> · Global Local SEO Expert · 10+ years experience
             </p>
           </div>
         </div>
@@ -195,7 +195,7 @@ export default function AboutPage() {
               <div className="space-y-4 text-slate-600 leading-relaxed">
                 <p>
                   I've spent over a decade working at the intersection of search, code, and
-                  content — and I've seen first-hand how most UK local businesses are losing
+                  content — and I've seen first-hand how most local businesses around the world are losing
                   customers every day simply because they can't be found online.
                 </p>
                 <p>
@@ -211,9 +211,9 @@ export default function AboutPage() {
                   in leads and revenue, not rankings spreadsheets.
                 </p>
                 <p>
-                  I work exclusively with UK local service businesses because that's where I
+                  I work with local service businesses all over the world because that's where I
                   can make the biggest impact. I understand your market, your customers, and
-                  what it takes to win in British towns and cities.
+                  what it takes to win in your city — wherever it is.
                 </p>
               </div>
             </div>
@@ -222,9 +222,9 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 gap-4">
               {[
                 { value: "10+", label: "Years of Experience" },
-                { value: "50+", label: "UK Businesses Helped" },
+                { value: "50+", label: "Businesses Helped" },
                 { value: "£2M+", label: "Revenue Generated" },
-                { value: "100%", label: "UK-Focused Work" },
+                { value: "36", label: "Cities Served Worldwide" },
               ].map(({ value, label }) => (
                 <div
                   key={label}

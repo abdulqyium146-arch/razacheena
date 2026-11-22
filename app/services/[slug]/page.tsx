@@ -79,7 +79,7 @@ export default async function ServicePage({
     name: service.title,
     description: service.shortDescription,
     provider: { "@id": "https://razacheena.com/#person" },
-    areaServed: { "@type": "Country", name: "United Kingdom" },
+    areaServed: { "@type": "Place", name: "Worldwide" },
     url: `https://razacheena.com/services/${slug}/`,
   };
 

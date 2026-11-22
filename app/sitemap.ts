@@ -2,8 +2,10 @@ import type { MetadataRoute } from "next";
 import { servicesData } from "@/lib/services-data";
 import { locationsData } from "@/lib/locations-data";
 
+export const dynamic = "force-static";
+
 // Update this date whenever pages are meaningfully edited.
-const SITE_BUILD_DATE = new Date("2026-06-07");
+const SITE_BUILD_DATE = new Date("2026-11-22");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://razacheena.com";

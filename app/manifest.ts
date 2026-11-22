@@ -1,11 +1,13 @@
 import type { MetadataRoute } from "next";
 
+export const dynamic = "force-static";
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Raza Cheena | UK Local SEO Specialist",
+    name: "Raza Cheena | Global Local SEO Expert",
     short_name: "RazaCheena",
     description:
-      "UK Local SEO specialist helping local service businesses rank higher on Google and win more customers online.",
+      "Global Local SEO expert helping local service businesses worldwide rank higher on Google and win more customers online.",
     start_url: "/",
     display: "standalone",
     background_color: "#0F172A",

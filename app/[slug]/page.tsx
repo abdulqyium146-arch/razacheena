@@ -71,7 +71,7 @@ export default async function LocationPage({
     name: `Local SEO ${location.city}`,
     description: `Expert Local SEO services helping ${location.city} service businesses rank on Google Maps and local search.`,
     provider: { "@id": "https://razacheena.com/#person" },
-    areaServed: { "@type": "City", name: location.city, containedInPlace: { "@type": "Country", name: "United Kingdom" } },
+    areaServed: { "@type": "City", name: location.city, containedInPlace: { "@type": "Country", name: location.country } },
     url: `https://razacheena.com/local-seo-${location.slug}/`,
   };
 
@@ -142,11 +142,11 @@ export default async function LocationPage({
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <a
-                href="tel:03474825228"
+                href="tel:+923474825228"
                 className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-xl border border-white/20 transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                Call: 0347 4825228
+                Call: +92 347 4825228
               </a>
             </div>
           </div>
@@ -202,7 +202,7 @@ export default async function LocationPage({
               <div className="mt-8 bg-blue-50 border border-blue-100 rounded-2xl p-6">
                 <p className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-2">Location Served</p>
                 <p className="text-slate-900 font-semibold">{location.city}, {location.county}</p>
-                <p className="text-slate-500 text-sm">{location.region} · United Kingdom</p>
+                <p className="text-slate-500 text-sm">{location.region} · {location.country}</p>
               </div>
             </div>
           </div>
@@ -220,16 +220,16 @@ export default async function LocationPage({
               Why {location.city} Businesses Choose Raza Cheena
             </h2>
             <p className="text-slate-500 text-lg max-w-2xl mx-auto">
-              I work exclusively with UK local service businesses. That means I understand
-              your market, your customers, and what it takes to win in British cities.
+              I work with local service businesses all over the world. That means I understand
+              your market, your customers, and what it takes to win in your city — wherever it is.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                title: "UK-Only Specialist",
-                body: `I work exclusively with UK businesses. I know the UK local search landscape inside out — including what's working right now for service businesses in ${location.city}.`,
+                title: "Global Reach, Local Expertise",
+                body: `I work with local businesses worldwide. I know the local search landscape inside out — including what's working right now for service businesses in ${location.city}.`,
               },
               {
                 title: "Five Experts in One",

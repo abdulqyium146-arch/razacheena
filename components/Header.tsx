@@ -46,12 +46,12 @@ export default function Header() {
           {/* Desktop CTAs */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="tel:03474825228"
+              href="tel:+923474825228"
               className="flex items-center gap-1.5 text-sm font-medium text-slate-700 hover:text-blue-700 transition-colors"
               aria-label="Call Raza Cheena"
             >
               <Phone className="w-4 h-4" />
-              0347 4825228
+              +92 347 4825228
             </a>
             <a
               href={WA_LINK}
@@ -75,7 +75,7 @@ export default function Header() {
           {/* Mobile: phone + WhatsApp + hamburger */}
           <div className="flex items-center gap-2 md:hidden">
             <a
-              href="tel:03474825228"
+              href="tel:+923474825228"
               className="p-2 text-blue-700"
               aria-label="Call us"
             >

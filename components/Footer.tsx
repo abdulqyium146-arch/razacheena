@@ -58,17 +58,17 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
-              UK Local SEO specialist helping local service businesses rank higher on Google,
+              Global Local SEO expert helping local service businesses worldwide rank higher on Google,
               win more customers, and grow online.
             </p>
             {/* NAP — critical for local SEO consistency */}
             <address className="not-italic space-y-2.5 text-sm">
               <a
-                href="tel:03474825228"
+                href="tel:+923474825228"
                 className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors"
               >
                 <Phone className="w-4 h-4 text-blue-400 shrink-0" />
-                0347 4825228
+                +92 347 4825228
               </a>
               <a
                 href={WA_LINK}
@@ -77,7 +77,7 @@ export default function Footer() {
                 className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors"
               >
                 <MessageCircle className="w-4 h-4 text-[#25D366] shrink-0" />
-                WhatsApp: 0347 4825228
+                WhatsApp: +92 347 4825228
               </a>
               <a
                 href="mailto:hello@razacheena.com"
@@ -88,7 +88,7 @@ export default function Footer() {
               </a>
               <p className="flex items-start gap-2 text-slate-400">
                 <MapPin className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
-                United Kingdom
+                Quetta, Pakistan
               </p>
             </address>
           </div>
@@ -153,14 +153,14 @@ export default function Footer() {
                 <li key={city}>{city}</li>
               ))}
             </ul>
-            <p className="text-slate-500 text-xs mt-3">+ all UK locations</p>
+            <p className="text-slate-500 text-xs mt-3">+ 26 more cities worldwide</p>
           </div>
         </div>
 
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>© {new Date().getFullYear()} Raza Cheena. All rights reserved.</p>
-          <p>UK Local SEO Specialist | razacheena.com</p>
+          <p>Global Local SEO Expert | razacheena.com · <Link href="/llms.txt" className="hover:text-slate-300">llms.txt</Link></p>
         </div>
       </div>
     </footer>

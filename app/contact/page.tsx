@@ -6,9 +6,9 @@ const WA_LINK = "https://wa.me/923474825228?text=Hi%20Raza%2C%20I%27d%20like%20t
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Raza Cheena | Free SEO Audit for UK Local Businesses",
+  title: "Contact Raza Cheena | Free SEO Audit for Local Businesses Worldwide",
   description:
-    "Get in touch with Raza Cheena for a free SEO audit. UK Local SEO specialist available for local service businesses across the UK. Typically responds within one business day.",
+    "Get in touch with Raza Cheena for a free SEO audit. Global Local SEO expert available for local service businesses worldwide. Typically responds within one business day.",
   authors: [{ name: "Raza Cheena", url: "https://razacheena.com/about/" }],
   creator: "Raza Cheena",
   publisher: "Raza Cheena",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact Raza Cheena | Free SEO Audit",
     description:
-      "Book your free SEO audit today. UK Local SEO specialist for local service businesses. Responds within one business day.",
+      "Book your free SEO audit today. Global Local SEO expert for local service businesses worldwide. Responds within one business day.",
     url: "https://razacheena.com/contact/",
     siteName: "Raza Cheena",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Contact Raza Cheena — Free SEO Audit", type: "image/jpeg" }],
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Contact Raza Cheena | Free SEO Audit",
-    description: "Book your free SEO audit today. UK Local SEO specialist. Responds within one business day.",
+    description: "Book your free SEO audit today. Global Local SEO expert. Responds within one business day.",
     images: ["/og-image.jpg"],
   },
 };
@@ -52,28 +52,27 @@ const contactSchema = {
     "@type": "Person",
     "@id": "https://razacheena.com/#person",
     name: "Raza Cheena",
-    telephone: "03474825228",
+    telephone: "+923474825228",
     email: "hello@razacheena.com",
     contactPoint: [
       {
         "@type": "ContactPoint",
-        telephone: "03474825228",
+        telephone: "+923474825228",
         contactType: "customer service",
-        contactOption: "TollFree",
-        areaServed: "GB",
+        areaServed: "Worldwide",
         availableLanguage: "English",
         hoursAvailable: {
           "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          opens: "09:00",
-          closes: "18:00",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          opens: "00:00",
+          closes: "23:59",
         },
       },
       {
         "@type": "ContactPoint",
         url: "https://wa.me/923474825228",
         contactType: "customer service",
-        areaServed: "GB",
+        areaServed: "Worldwide",
         availableLanguage: "English",
       },
     ],
@@ -84,14 +83,14 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "0347 4825228",
-    href: "tel:03474825228",
-    note: "Mon–Fri, 9am–6pm",
+    value: "+92 347 4825228",
+    href: "tel:+923474825228",
+    note: "Open 24 hours",
   },
   {
     icon: MessageCircle,
     label: "WhatsApp",
-    value: "0347 4825228",
+    value: "+92 347 4825228",
     href: WA_LINK,
     note: "Fastest way to reach me",
     external: true,
@@ -113,9 +112,9 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Location",
-    value: "United Kingdom",
+    value: "Quetta, Pakistan",
     href: null,
-    note: "Working with clients nationwide",
+    note: "Service-area business — clients worldwide",
   },
 ];
 
